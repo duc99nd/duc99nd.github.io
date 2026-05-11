@@ -32,28 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for fade-in animations
+    // Improved Intersection Observer for buttery smooth fade-ins
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 0.15
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('show-scroll');
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Apply animation start state to all glass-cards and sections
-    document.querySelectorAll('.glass-card, .section-title, .hero-content').forEach(el => {
-        el.style.opacity = 0;
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    // Apply animation classes
+    const animatedElements = document.querySelectorAll('.glass-card, .section-title, .hero-content, .edu-item, .awards-list li');
+    animatedElements.forEach((el, index) => {
+        el.classList.add('hidden-scroll');
+        
+        // Add staggered delays for elements in grids
+        if (el.closest('.projects-grid') || el.closest('.skills-container')) {
+            const delay = (index % 4) + 1;
+            el.classList.add(`delay-${delay}`);
+        }
+        
         observer.observe(el);
     });
 });
