@@ -58,12 +58,10 @@
         <section id="experience" class="section">
             <h2 class="section-title">Work Experience</h2>
             <div class="glass-card experience-card">
-                <div class="exp-header">
+                <div class="exp-header" style="margin-bottom: 10px;">
                     <div>
-                        <h3>Zinza Technology</h3>
-                        <h4>Team Lead / Full-stack Developer</h4>
+                        <h3>Zinza Technology — Hanoi, Vietnam</h3>
                     </div>
-                    <div class="exp-date">2020 – Present</div>
                 </div>
                 <div class="exp-stack">
                     <span class="badge">Node.js (NestJS)</span>
@@ -73,12 +71,39 @@
                     <span class="badge">AWS</span>
                     <span class="badge">Docker</span>
                 </div>
-                <ul class="exp-list">
-                    <li><strong>Technical Leadership:</strong> Led a team of 3–6 engineers through full SDLC (estimation, sprint planning, code reviews, and release management).</li>
-                    <li><strong>System Design & Delivery:</strong> Delivered and operated multiple web products across EdTech, Gov/Legal workflows, recruitment, and e-commerce.</li>
-                    <li><strong>Performance & Cost Optimization:</strong> Reduced AWS infrastructure costs by ~USD $4,000/month through API optimization, SQL tuning, Redis caching, and async processing (SQS, Step Functions, Lambda).</li>
-                    <li><strong>Core Engineering:</strong> Built robust S3/queue-based video processing systems, integrated GraphQL endpoints, and executed major framework upgrades with zero downtime.</li>
-                </ul>
+                
+                <!-- Role 1: Team Lead -->
+                <div style="margin-bottom: 35px; margin-top: 25px;">
+                    <div class="exp-header">
+                        <div>
+                            <h4>Team Lead</h4>
+                        </div>
+                        <div class="exp-date">Jun 2025 – Present</div>
+                    </div>
+                    <ul class="exp-list">
+                        <li><strong>Technical Leadership & Client Communication:</strong> Led a team of 3–6 engineers through the full SDLC (estimation, sprint planning, code reviews, mentoring, release management). Collaborated directly with PMs, QA, and international clients (utilizing strong English written communication) to define and execute complex requirements.</li>
+                        <li><strong>AI-Assisted Engineering:</strong> Accelerated software delivery and architectural planning by integrating agentic AI workflows (Claude Code, Antigravity, GitHub Copilot) into the daily SDLC, significantly boosting team productivity and code quality.</li>
+                        <li><strong>Cost & Performance Optimization:</strong> Achieved ~USD $4,000/month in AWS infrastructure cost savings by auditing and optimizing resource utilization, tuning SQL queries, implementing aggressive Redis caching, and re-architecting synchronous bottlenecks into async background jobs (SQS, Step Functions, Lambda).</li>
+                        <li><strong>Architecture & Server Administration:</strong> Owned end-to-end delivery of highly available production systems, scaling architectures from monolithic to microservices and serverless environments across AWS (ECS, EC2, Lambda), Linux servers, and Docker. Directly managed production databases, maintained strict observability, built CI/CD pipelines, and led proactive incident response.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2: Full-stack Developer -->
+                <div>
+                    <div class="exp-header">
+                        <div>
+                            <h4>Full-stack Developer</h4>
+                        </div>
+                        <div class="exp-date">Nov 2020 – Present</div>
+                    </div>
+                    <p style="color: var(--text-color); font-weight: 600; margin-bottom: 15px; font-size: 0.95rem;">Project Highlights & Core Engineering:</p>
+                    <ul class="exp-list">
+                        <li><strong>EdTech Video Platform:</strong> Architected a high-performance video processing pipeline. Implemented S3 multipart uploads combined with queue-based asynchronous processing (SQS) to handle heavy video transcoding, thumbnail generation, and metadata extraction. Modernized the frontend using React alongside legacy jQuery, and successfully led a major framework upgrade from Laravel 5.2 to 8.x with extensive baseline tests.</li>
+                        <li><strong>Japan Gov/Legal Documentation Workflow:</strong> Designed and built complex step-based document approval workflows. Engineered a robust digital signature (e-sign) and certificate generation system integrating strict XML payload validation, status tracking, document versioning, and immutable audit logs to meet high compliance standards.</li>
+                        <li><strong>Recruitment Platform:</strong> Solved performance bottlenecks in a high-traffic recruitment portal. Drastically improved platform efficiency by reducing API payload sizes, tuning CloudWatch aggregation metrics, and designing highly resilient asynchronous integrations (batching, automatic retries, strict idempotency) using SQS and Step Functions.</li>
+                        <li><strong>Domain, Hosting & VPN Commerce Platform:</strong> Built and maintained a WHMCS-like platform for selling domains, hosting packages, and VPN services. Integrated T3 payment flows, automated order processing and service provisioning, improved transaction reliability with secure webhooks and idempotent payment handling, and deployed the platform on Linux servers with CI/CD and catalog caching for SEO.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
