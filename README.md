@@ -1,4 +1,4 @@
-# Duc Trinh - Personal Portfolio
+# Trinh Van Duc - Personal Portfolio
 
 This repository contains the source code for my personal portfolio website, hosted on [GitHub Pages](https://duc99nd.github.io).
 
